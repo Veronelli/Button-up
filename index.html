@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <a class='a-btn' href="#">
+
+        <div class="container-btn">
+
+            <div id="button-one">Inicio</div>
+            <div id="button-two">Inicio</div>
+
+        </div>
+
+    </a>
+    
+
+</body>
+
+<style>
+
+    *{
+
+        margin: 0;
+        padding: 0;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    }
+    .a-btn{
+
+         display: flex;
+        justify-content: center;
+        margin: 10rem auto;
+        text-align: center;
+        text-decoration: none;
+        background: red;
+        width: 4rem;
+        height: 2rem;
+        position: relative;
+        overflow: hidden;
+        border-radius: 5px;
+
+    }
+    .container-btn{
+
+        position: absolute;
+        transition: .3s;
+    }
+    #button-one{
+
+        background-color: rgb(40, 134, 216);
+
+    }
+    #button-one,
+    #button-two{
+
+        padding: 8px 16px;
+        color: white;
+
+    }
+    .a-btn:hover>.container-btn{
+        transform: translateY(-2.2rem);
+    }
+
+</style>
+</html>
